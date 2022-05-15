@@ -6,11 +6,17 @@ import { AppComponent } from './app.component';
 import {HttpClientModule} from "@angular/common/http";
 import { GifsTrendComponent } from './gifs-trend/gifs-trend.component';
 import { SearchGifComponent } from './search-gif/search-gif.component';
+import { EntertainmentComponent } from './entertainment/entertainment.component';
+import { ReactionsComponent } from './reactions/reactions.component';
+import { SportsComponent } from './sports/sports.component';
 @NgModule({
   declarations: [
     AppComponent,
     GifsTrendComponent,
-    SearchGifComponent
+    SearchGifComponent,
+    EntertainmentComponent,
+    ReactionsComponent,
+    SportsComponent
   ],
   imports: [
     BrowserModule,
