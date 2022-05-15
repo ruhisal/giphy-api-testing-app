@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient,HttpParams } from "@angular/common/http";
 import { Observable } from "rxjs";
 import { environment} from "../../environments/environment";
-import { Root } from 'src/app/classes/config';
 @Injectable({
   providedIn: 'root'
 })
@@ -23,4 +22,3 @@ export class GiphyService {
       return this.httpClient.get("https://api.giphy.com/v1/gifs/search?",{params:params1});
   }
 }
- 
