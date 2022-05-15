@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import{GiphyService} from 'src/app/services/giphy.service';
+import{GiphyService} from '../services/giphy.service';
 @Component({
   selector: 'app-gifs-trend',
   templateUrl: './gifs-trend.component.html',
