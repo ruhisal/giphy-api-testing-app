@@ -25,9 +25,11 @@ text-decoration: none;
 
 
 .offset {
-  --color: #19bc8b;
-  --hover: #1973bc;
+  --color: #0defa0;
+  --hover: #dc04f4;
 }
+/*   --color: #18d69d;
+  --hover: #1973bc; */
 
 .button {
   color: var(--color);
@@ -47,14 +49,8 @@ text-decoration: none;
   margin: 0.5em;
   padding: 1em 2em;
 }
-
-h1 {
-  font-weight: 400;
-}
-
-code {
-  color: #e4cb58;
-  font: inherit;
+.navbar{
+  background-color: black;
 }
 
 /*  */
