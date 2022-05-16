@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { GiphyService } from './services/giphy.service';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule,routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HttpClientModule} from "@angular/common/http";
 import { GifsTrendComponent } from './gifs-trend/gifs-trend.component';
@@ -18,7 +18,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     EntertainmentComponent,
     ReactionsComponent,
     SportsComponent,
-    NavigationComponent
+    NavigationComponent,
+    routingComponents
   ],
   imports: [
     BrowserModule,

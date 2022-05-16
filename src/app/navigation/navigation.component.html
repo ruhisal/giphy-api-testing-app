@@ -6,13 +6,15 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav nav-link Home" aria-current="page" href="#" (click)="gettrendinggifs()"><button class="button offset">Trending</button></a>
-          <a class="nav nav-link Reactions" href="#" (click)="searchreactiongifs()"><button class=" button offset">Reactions</button></a>
-          <a class="nav nav-link Entertainment" href="#" (click)="searchentertainentgifs()"><button class=" button offset">Entertainment</button></a>
-          <a class="nav nav-link Sports" href="#"(click)="searchsportsgifs()" ><button class=" button offset">Sports</button> </a>
+          <a routerLink="/Trending" class="nav nav-link Home" aria-current="page" href="#" ><button class="button offset">Trending</button></a>
+          <a routerLink="/Reactions" class="nav nav-link Reactions" href="#"><button class=" button offset">Reactions</button></a>
+          <a routerLink="/Entertainment" class="nav nav-link Entertainment" href="#" ><button class=" button offset">Entertainment</button></a>
+          <a routerLink="/Sports" class="nav nav-link Sports" href="#"><button class=" button offset">Sports</button> </a>
           <a class="nav nav-link " href="#" ><button class=" button offset">Favorites</button> </a>
           <a class="nav nav-link logout" href="#"><button class=" button offset">Logout</button> </a>
         </div>
       </div>
     </div>
   </nav>
+  <!-- (click)="gettrendinggifs()" -->
+<!-- (click)="searchentertainentgifs()" -->

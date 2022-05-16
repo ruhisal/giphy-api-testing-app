@@ -9,13 +9,18 @@ import { GiphyService } from '../services/giphy.service';
 
 export class EntertainmentComponent implements OnInit {
   constructor(private gs:GiphyService) { }
-
-  ngOnInit(): void {
-  }
+  gifs:any[]=[];
   holder:string='entertainment';
+  ngOnInit(): void {
+    this.gs.getGifbyparameters(this.holder).subscribe(data=>{
+      console.log(data.data);
+      this.gifs=data.data;
+    });
+  }
   searchentertainentgifs(){
       this.gs.getGifbyparameters(this.holder).subscribe(data=>{
         console.log(data.data);
+        this.gifs=data.data;
       });
 }
 }
