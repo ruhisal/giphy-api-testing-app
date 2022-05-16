@@ -17,7 +17,7 @@ export class GiphyService {
   }
   getGifbyparameters(query:string):Observable<any>{
       let params1=new HttpParams().set("api_key",environment.myGiphyApiKey).set("q",query)
-      .set("limit",this.limit).set("offset",this.offset).set("rating","g").set("lang","en");
+      .set("limit",this.limit).set("offset",this.offset).set("rating","all").set("lang","en");
 
       return this.httpClient.get("https://api.giphy.com/v1/gifs/search?",{params:params1});
   }

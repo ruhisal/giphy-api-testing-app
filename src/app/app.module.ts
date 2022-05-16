@@ -9,6 +9,7 @@ import { SearchGifComponent } from './search-gif/search-gif.component';
 import { EntertainmentComponent } from './entertainment/entertainment.component';
 import { ReactionsComponent } from './reactions/reactions.component';
 import { SportsComponent } from './sports/sports.component';
+import { NavigationComponent } from './navigation/navigation.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import { SportsComponent } from './sports/sports.component';
     SearchGifComponent,
     EntertainmentComponent,
     ReactionsComponent,
-    SportsComponent
+    SportsComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
