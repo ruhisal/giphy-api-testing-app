@@ -13,11 +13,12 @@ export class GiphyService {
   private offset:number=0;
   
   getGif():Observable<any>{
-    return this.httpClient.get("https://api.giphy.com/v1/gifs/trending?api_key=d3GAzcupXbmwQKhn7jj1KIu7EICfiIEt&limit=20&rating=G&lang=en");
+    let params0=new HttpParams().set("api_key",environment.myGiphyApiKey)
+    return this.httpClient.get("https://api.giphy.com/v1/gifs/trending?&limit=20",{params:params0});
   }
   getGifbyparameters(query:string):Observable<any>{
       let params1=new HttpParams().set("api_key",environment.myGiphyApiKey).set("q",query)
-      .set("limit",this.limit).set("offset",this.offset).set("rating","all").set("lang","en");
+      .set("limit",this.limit);
 
       return this.httpClient.get("https://api.giphy.com/v1/gifs/search?",{params:params1});
   }
