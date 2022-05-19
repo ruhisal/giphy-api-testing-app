@@ -22,4 +22,4 @@ export class GiphyService {
 
       return this.httpClient.get("https://api.giphy.com/v1/gifs/search?",{params:params1});
   }
-
+}
