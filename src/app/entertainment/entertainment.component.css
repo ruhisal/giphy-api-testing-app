@@ -1,9 +1,13 @@
-.gifs{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    /* width: 1000px; */
-    margin: 10px auto;
-}
-.gif img{
-    max-width: 250px;
-}
+ 
+  img {
+    max-width: 100%;
+    display: block;
+    border-radius: 15px;
+    padding: 4px;
+  }
+  
+  .container {
+    column-count: 4;
+    column-gap: 10px;
+  }
+  
