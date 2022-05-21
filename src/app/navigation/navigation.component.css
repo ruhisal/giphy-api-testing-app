@@ -73,3 +73,20 @@ text-decoration: none;
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
 }
+
+ 
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 15px;
+  padding: 4px;
+}
+
+
+.containor {
+  column-count: 4;
+  column-gap: 10px;
+}
+.applier{
+  background-color: black;
+}
