@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'giphy-api-testing-app';
+  title = 'giphy-app-Batch-1-Group-4';
   constructor() { }
   ngOnInit():void {
 }
