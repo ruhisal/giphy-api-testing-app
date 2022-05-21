@@ -1,16 +1,16 @@
- 
-  img {
-    max-width: 100%;
-    display: block;
-    border-radius: 15px;
-    padding: 4px;
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 9px;
+  padding: 4px;
   }
   
-
+  
   .container {
-    column-count: 4;
-    column-gap: 10px;
+  column-count: 4;
+  column-gap: 10px;
   }
   .applier{
-    background-color: black;
+  background-color: black;
   }
+  

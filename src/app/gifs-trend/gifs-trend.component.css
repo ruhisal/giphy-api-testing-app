@@ -1,14 +1,16 @@
 img {
   max-width: 100%;
   display: block;
-  border-radius: 15px;
+  border-radius: 9px;
   padding: 4px;
-}
-
-.container {
+  }
+  
+  
+  .container {
   column-count: 4;
   column-gap: 10px;
-}
-.applier{
+  }
+  .applier{
   background-color: black;
-}
+  }
+  
