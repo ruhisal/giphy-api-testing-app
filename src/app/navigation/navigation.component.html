@@ -7,43 +7,17 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <!-- <a href="#" class="nav nav-link Home" ><button class="button offset">Search</button></a> -->
-          <form class="d-flex">
-            <input class="form-control me-2" style="height:3em;margin-top:1.1em" type="search" placeholder="SearchGifs" aria-label="Search" #gif>
-            <a routerLink="/Searching" class="nav nav-link Search" href=""><button class="button  glow-on-hover" (click)="search(gif.value)" type="submit"><i class="fa fa-search"></i></button></a>
-          </form>
+          <a routerLink="/Searching" class="nav nav-link Search" href=""><button class="button  glow-on-hover" type="submit"><i class="fa fa-search"></i>Search</button></a>
           <a routerLink="/Trending" class="nav nav-link Home" aria-current="page" href="#" ><button class="button  glow-on-hover"><i class="fa fa-line-chart"></i>Trending</button></a>
           <a routerLink="/Reactions" class="nav nav-link Reactions" href="#"><button class=" button  glow-on-hover"><i class="fa fa-smile-o"></i>Reactions</button></a>
           <a routerLink="/Entertainment" class="nav nav-link Entertainment" href="#" ><button class=" button  glow-on-hover"><i class="fa fa-star-half-o"></i>Entertainment</button></a>
           <a routerLink="/Sports" class="nav nav-link Sports" href="#"><button class=" button  glow-on-hover"><i class="fa fa-bicycle"></i>Sports</button> </a>
           <a class="nav nav-link " href="#" ><button class=" button  glow-on-hover"><i class="fa fa-bookmark"></i>Favorites</button> </a>
-          <!-- <a class="nav nav-link logout" href="#"><button class=" button offset">Logout</button> </a> -->
-          <div class="dropdown" style="margin-top:0.5em;">
-            <button class="button  glow-on-hover dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              User
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">View Details</a></li>
-              <li><a class="dropdown-item" href="#">Log Out</a></li>
-              <li><a class="dropdown-item" href="#">Designer details</a></li>
-            </ul>
-          </div>
+          <a class="nav nav-link" href=""> <button class="button  glow-on-hover "><i class="fa fa-user"></i> Account</button></a>
         </div>
       </div>
     </div>
   </nav>
+  <!-- (click)="search(gif.value)"  -->
   <!-- (keyup.enter)="search(gif.value)" -->
   <!-- <app-search-gif *ngIf="gigs.length>0"></app-search-gif> -->
-<div *ngIf="gigs.length>0" class="comunicator">
-  <div class="applier">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <br>
-    <div class="containor">
-        <figure *ngFor="let g of gigs">
-            <!-- <img src="{{g.images.original.url}}" alt="okkkk"> -->
-            <img [src]="g.images.original.url" alt="GifIMG">
-          </figure>
-    </div>
-    </div>
-</div>

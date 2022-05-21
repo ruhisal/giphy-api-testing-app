@@ -11,4 +11,13 @@ constructor(private gs:GiphyService) { }
 gigs:any[]=[]
   ngOnInit(): void {
   }
+  search(query:string){
+    if(query!=""){
+      this.gs.getGifbyparameters(query).subscribe(sata=>{
+      this.gigs=sata.data;
+        console.log(sata.data);
+        return this.gigs;
+      });
+    }
+  }
 }
